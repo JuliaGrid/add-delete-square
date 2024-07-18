@@ -1,0 +1,32 @@
+.w {
+    width: 95%;
+    margin: auto;
+}
+.list__wrapper {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    min-height: 120px;
+    background-color: #f0f0f0;
+}
+
+.item-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.item-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 1000ms;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 500ms, transform 500ms;
+}

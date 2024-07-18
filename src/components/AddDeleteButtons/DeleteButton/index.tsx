@@ -1,14 +1,16 @@
 import { useAppDispatch } from "../../../hooks/useAppDispatch";
+import { useAppSelector } from "../../../hooks/useAppSelector";
 import { deleteSquare } from "../../../store/action";
+import "../index.css";
 
 export function DeleteButton() {
     const dispatch = useAppDispatch();
 
-    const h = () => {
+    const handleClick = () => {
         dispatch(deleteSquare())
     }
 
     return (
-        <button onClick={h}>Delete</button>
+        <button className="button" onClick={handleClick}>Delete</button>
     )
 }

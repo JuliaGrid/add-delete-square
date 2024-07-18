@@ -6,6 +6,7 @@ export type InitalState = {
 
 export type Square = {
     color: string;
+    id?: string;
 }
 
 export type State = ReturnType<typeof store.getState>;
