@@ -12,6 +12,6 @@ export function AddButton() {
     }
 
     return (
-        <button className="button" onClick={handleClick}>Add</button>
+        <button className="button" onClick={handleClick}>Добавить</button>
     )
 }

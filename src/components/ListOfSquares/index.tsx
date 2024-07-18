@@ -7,12 +7,14 @@ export function ListOfSquares() {
     const squares = useAppSelector((state) => state.squares);
 
     return (
-        <TransitionGroup className="list__wrapper">
-        {squares.map((item) => (
-          <CSSTransition key={item.id} timeout={500} classNames="item">
-            <ItemOfSquare color={item.color} />
-          </CSSTransition>
-        ))}
-      </TransitionGroup>
+        <div className="list__container">
+            <TransitionGroup className="list__wrapper">
+                {squares.map((item) => (
+                <CSSTransition key={item.id} timeout={500} classNames="item">
+                    <ItemOfSquare color={item.color} />
+                </CSSTransition>
+                ))}
+            </TransitionGroup>
+      </div>
     )
 }

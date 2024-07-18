@@ -11,6 +11,6 @@ export function DeleteButton() {
     }
 
     return (
-        <button className="button" onClick={handleClick}>Delete</button>
+        <button className="button" onClick={handleClick}>Удалить</button>
     )
 }
